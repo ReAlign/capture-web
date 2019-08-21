@@ -90,12 +90,12 @@ module.exports = {
 };
 ```
 
-[npm-image]: https://img.shields.io/npm/v/capture-web.svg?longCache=true&style=for-the-badge
-[npm-url]: https://www.npmjs.com/package/capture-web
-
 ## Todo
 
 * [ ] Performance optimization
   * [ ] Too slow when capture gif
 * [ ] More config
 * [ ] Others
+
+[npm-image]: https://img.shields.io/npm/v/@realign-zone/capture-web.svg?longCache=true&style=for-the-badge
+[npm-url]: https://www.npmjs.com/package/@realign-zone/capture-web
