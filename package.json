@@ -1,6 +1,6 @@
 {
   "name": "@realign-zone/capture-web",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "main": "src/main.js",
   "keywords": [
     "puppeteer",

@@ -38,13 +38,13 @@
 
 ```bash
 # install
-npm i capture-web -S
+npm i @realign-zone/capture-web -S
 ```
 
 ### Task
 
 ```js
-const CaptureWeb = require('capture-web');
+const CaptureWeb = require('@realign-zone/capture-web');
 
 // configFilePath is：configFile's absolute path
 CaptureWeb(`${configFilePath}`).then(() => {
