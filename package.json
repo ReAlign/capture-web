@@ -1,17 +1,48 @@
 {
-  "name": "@realign-zone/capture-web",
+  "name": "capture-web",
   "version": "0.0.1",
-  "description": "A tool, capture web page snapshot tobe png/jpeg/gif.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "src/main.js",
+  "keywords": [
+    "puppeteer",
+    "capture",
+    "snapshot",
+    "screenshot",
+    "capture-web",
+    "capture-page",
+    "gif",
+    "png",
+    "multitasking",
+    "multiple"
+  ],
+  "scripts": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ReAlign/capture-web.git"
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
   },
-  "author": "",
-  "license": "ISC",
+  "files": [
+    "src",
+    "dist/*.js"
+  ],
+  "dependencies": {
+    "capture-website": "^0.4.0",
+    "chalk": "^2.4.2",
+    "del": "^5.0.0",
+    "gifencoder": "^2.0.1",
+    "ora": "^3.4.0",
+    "png-file-stream": "^1.2.1"
+  },
+  "devDependencies": {},
+  "author": "ReAlign",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/ReAlign/capture-web/issues"
   },
